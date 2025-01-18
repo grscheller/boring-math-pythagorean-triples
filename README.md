@@ -1,11 +1,14 @@
-# Daddy's boring math library - Pythagorean triple module
+# Daddy's boring math library - Pythagorean triples
 
-Module to generate and explore Pythagorean triples.
+Package containing a class to generate Pythagorean ttiples along
+with a CLI executable.
+
+
+* [Pythagorean triple class](#pythagorean-triple-class)
+* [Pythagorean triple CLI program](#pythagorean-triple-cli-program)
 
 Part of the "Boring Math" PyPI **bm** namespace for mathematical hobby
 projects.
-
-* [bm.pythagorean-triples](#pythagorean-triples)
 
 * **Repositories**
   * [bm.pythagorean-triples][1] project on *PyPI*
@@ -15,7 +18,7 @@ projects.
 
 ## Library Modules
 
-### Pythagorean Triples Module
+### Pythagorean Triple Class
 
 * Pythagorean Triple Class
   * Method **Pythag3.triples**(a_start: int, a_max: int, max: Optional[int]) -> Iterator[int]
@@ -32,12 +35,15 @@ projects.
 
 ## CLI Applications
 
-### Pythagorean triple CLI script
+Implemented in an OS and package build tool independent way via the
+project.scripts section of pyproject.toml.
+
+### Pythagorean triple CLI program
 
 Geometrically, a *Pythagorean* triangle is a right triangle with
 positive integer sides.
 
-#### CLI program **pythag3**
+#### CLI program `pythag3`
 
 * Generates primitive Pythagorean triples
   * A primitive Pythagorean triple is a 3-tuple of integers `(a, b, c)` such that
@@ -53,4 +59,5 @@ positive integer sides.
 
 [1]: https://pypi.org/project/bm.pythagorean-triples/
 [2]: https://github.com/grscheller/bm-pythagorean-triples/
-[3]: https://grscheller.github.io/boring-math-docs/pythagorean-triples
+[3]: https://grscheller.github.io/boring-math-docs/pythagorean-triples/
+
