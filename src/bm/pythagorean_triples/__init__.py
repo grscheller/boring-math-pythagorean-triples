@@ -19,10 +19,6 @@
 
 * module `bm.pythagorean_triples.pythag3`: Pythagorean generation
 
-#### CLI executables
-
-* program `bm.pythagorean_triples.cli.pythag3_cli`
-
 ---
 
 """
