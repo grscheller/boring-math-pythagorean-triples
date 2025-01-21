@@ -40,7 +40,7 @@ Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHAN
 Documentation = "https://grscheller.github.io/boring-math-docs/pythagorean-triples"
 
 [tool.flit.sdist]
-exclude = ["dist", "docs", ".gitignore", ".mypy_cache"]
+exclude = ["dist", ".gitignore", ".mypy_cache"]
 
 [tool.pylsp-mypy]
 enabled = true

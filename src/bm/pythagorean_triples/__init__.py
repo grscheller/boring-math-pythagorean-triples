@@ -13,9 +13,9 @@
 # limitations under the License.
 
 """
-### Daddy's Boring Math Library - Pythagorean Triples
+### Boring Math Library - Pythagorean Triples
 
-#### Modules for generating and analyzing Pythagorean triples.
+#### Module for generating and analyzing Pythagorean triples.
 
 * module bm.pythagorean_triples.pythag3: Pythagorean generation
 

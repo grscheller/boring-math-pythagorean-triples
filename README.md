@@ -1,6 +1,6 @@
-# Daddy's boring math library - Pythagorean triples
+# Boring Math Library - Pythagorean triples
 
-Package containing a class to generate Pythagorean ttiples along
+Package containing a class to generate Pythagorean triples along
 with a CLI executable.
 
 
