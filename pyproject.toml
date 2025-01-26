@@ -21,7 +21,11 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Typing :: Typed"
 ]
-dependencies = ["bm.integer_math"]
+dependencies = [
+    "bm.integer-math",
+    "dtools.circular-array",
+    "dtools.fp"
+]
 dynamic = ["version", "description"]
 keywords = [
     "pythagorean", "triples",
