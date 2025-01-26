@@ -16,6 +16,9 @@ projects.
 * **Detailed documentation**
   * [Detailed API documentation][3] on *GH-Pages*
 
+This project is part of the
+[Boring Math][4] **bm.** namespace project.
+
 ## Library Modules
 
 ### Pythagorean Triple Class
@@ -60,4 +63,4 @@ positive integer sides.
 [1]: https://pypi.org/project/bm.pythagorean-triples/
 [2]: https://github.com/grscheller/bm-pythagorean-triples/
 [3]: https://grscheller.github.io/boring-math-docs/pythagorean-triples/
-
+[4]: https://github.com/grscheller/boring-math-docs
