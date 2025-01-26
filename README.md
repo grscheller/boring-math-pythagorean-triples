@@ -7,9 +7,6 @@ with a CLI executable.
 * [Pythagorean triple class](#pythagorean-triple-class)
 * [Pythagorean triple CLI program](#pythagorean-triple-cli-program)
 
-Part of the "Boring Math" PyPI **bm** namespace for mathematical hobby
-projects.
-
 * **Repositories**
   * [bm.pythagorean-triples][1] project on *PyPI*
   * [Source code][2] on *GitHub*
