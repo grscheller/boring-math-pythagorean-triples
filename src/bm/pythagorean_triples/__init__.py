@@ -20,7 +20,7 @@
 * module bm.pythagorean_triples.pythag3: Pythagorean generation
 
 """
-__version__ = "0.5.2"
+__version__ = "0.5.3"
 __author__ = "Geoffrey R. Scheller"
 __copyright__ = "Copyright (c) 2016-2025 Geoffrey R. Scheller"
 __license__ = "Apache License 2.0"
