@@ -52,6 +52,9 @@ live-mode = true
 strict = true
 report_progress = true
 
+[tool.black]
+line-length =100
+
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
 implicit_reexport = false
