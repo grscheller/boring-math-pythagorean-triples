@@ -18,10 +18,12 @@
 * program **pythag3**  outputs lists of primitive triples
 
 """
+
 from __future__ import annotations
 
 import sys
 from bm.pythagorean_triples.pythag3 import Pythag3
+
 
 def pythag3_cli() -> None:
     """
@@ -46,18 +48,16 @@ def pythag3_cli() -> None:
     args = sys.argv[1:]
 
     if len(args) > 2:
-        pythagTriples = pythag3.triples(a_start = int(args[0]),
-                                        a_max = int(args[1]),
-                                        max = int(args[2]))
+        pythagTriples = pythag3.triples(
+            a_start=int(args[0]), a_max=int(args[1]), max=int(args[2])
+        )
     elif len(args) == 2:
-        pythagTriples = pythag3.triples(a_start = int(args[0]),
-                                        a_max = int(args[1]))
+        pythagTriples = pythag3.triples(a_start=int(args[0]), a_max=int(args[1]))
     elif len(args) == 1:
-        pythagTriples = pythag3.triples(a_start = 3, a_max = int(args[0]))
+        pythagTriples = pythag3.triples(a_start=3, a_max=int(args[0]))
     else:
-        pythagTriples = pythag3.triples(a_start = 3, a_max = 100)
+        pythagTriples = pythag3.triples(a_start=3, a_max=100)
 
     # Print out Pythagorean Triples
     for triple in pythagTriples:
         print(triple)
-

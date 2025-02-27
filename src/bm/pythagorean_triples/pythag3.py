@@ -16,7 +16,7 @@
 ### Pythagorean Triples
 
 * Pythagorean triples are three integers `a, b, c`  where `a² + b² = c²`
-* such a triple is primitive when `a,b,c > 0` and `gcd(a, b, c) = 1`
+* such a triple is primitive when `a, b, c > 0` and `gcd(a, b, c) = 1`
 * geometrically `a, b, c` represent the sides of a right triangle
 
 """
@@ -28,19 +28,21 @@ from bm.integer_math.num_theory import gcd, iSqrt
 
 __all__ = ['Pythag3']
 
-class Pythag3():
+
+class Pythag3:
     """Pythagorean Triple Iterator Class.
 
     * supports the generation of primitive Pythagorean triples
 
     """
-    def __init__(self, last_square: int=500, /):
+
+    def __init__(self, last_square: int = 500, /):
         last_h = last_square if last_square % 2 == 1 else last_square - 1
         if last_h < 5:
             last_h = 5
 
         # Create perfect square lookup dictionary
-        self.squares = {h*h: h for h in range(5, last_h + 1, 2)}
+        self.squares = {h * h: h for h in range(5, last_h + 1, 2)}
         self.last_h = last_h
 
     def _extend_squares(self, last_to_square: int, /) -> None:
@@ -49,28 +51,34 @@ class Pythag3():
         if last_h > self.last_h:
             # Extend perfect square lookup dictionary
             for h in range(self.last_h + 2, last_h + 1, 2):
-                self.squares[h*h] = h
+                self.squares[h * h] = h
             self.last_h = last_h
 
     @staticmethod
-    def _cap_sides(a_max: int, max: int|None=None, /) -> tuple[int, Callable[[int], int], int]:
+    def _cap_sides(
+        a_max: int, max: int | None = None, /
+    ) -> tuple[int, Callable[[int], int], int]:
         """Returns a tuple of capped max values for sides a,b,c."""
         a_cap = 2 if a_max < 3 else a_max
 
-        b_final: Callable[[int], int] = lambda a: (a**2 - 1) // 2  # theoretically, given side a
-        if max is None:                                            # there are no more triples
-            b_cap = b_final                                        # beyond this value for side b
+        b_final: Callable[[int], int] = (
+            lambda a: (a**2 - 1) // 2
+        )  # theoretically, given side a
+        if max is None:  # there are no more triples
+            b_cap = b_final  # beyond this value for side b
         else:
             cap = 4 if max < 5 else max
             if cap < a_cap + 2:
                 a_cap = cap - 2
             b_cap = lambda a: min(b_final(a), iSqrt(cap**2 - a**2))
 
-        c_cap = iSqrt(a_cap**2 + b_cap(a_cap)**2) + 1
+        c_cap = iSqrt(a_cap**2 + b_cap(a_cap) ** 2) + 1
 
         return a_cap, b_cap, c_cap
 
-    def triples(self, a_start: int=3, a_max: int=3, max: int|None=None) -> Iterator[tuple[int, int, int]]:
+    def triples(
+        self, a_start: int = 3, a_max: int = 3, max: int | None = None
+    ) -> Iterator[tuple[int, int, int]]:
         """Returns an iterator of all possible primitive Pythagorean triples.
 
         * tuple `(a, b, c)` where `a_start <= a <= a_max` and `0 < a < b < c < max`
@@ -88,4 +96,3 @@ class Pythag3():
                 if csq in self.squares:
                     if gcd(side_a, side_b) == 1:
                         yield side_a, side_b, self.squares[csq]
-
