@@ -34,7 +34,7 @@ This project is part of the [Boring Math][4] **bm.** namespace project.
     - a *Pythagorean* triple is primitive if gcd of `a, b, c` is `1`
   - Iterator finds all primitive Pythagorean Triples
     - where `0 < a_start <= a < b < c <= max` where `a <= a_max`
-    - if `max = 0` find all theoretically possible triples with `a <= a_max`
+    - if `max` not given, find all theoretically possible triples with `a <= a_max`
 
 ______________________________________________________________________
 
@@ -49,13 +49,10 @@ build tool independent way via the `project.scripts` section of
 #### CLI program pythag3
 
 - Generates primitive Pythagorean triples
-  - A primitive Pythagorean triple is a 3-tuple of integers `(a, b, c)` such that
-    - `a³ + b³ = c³` where `a,b,c > 0` and `gcd(a,b,c) = 1`
-  - The integers `a, b, c` represent the sides of a right triangle
 - **Usage:** `pythag3 [m [n [max]]`
   - 3 args print all triples with `m <= a <= n` and `a < b < c <= max`
-  - 2 args print all triples with `m <= a <= n`
-  - 1 arg prints all triples with `a <= m`
+  - 2 args print all theoretically possible triples with `m <= a <= n`
+  - 1 arg prints all theoretically possible triples with `a <= m`
   - 0 args print all triples with `3 <= a <= 100`
 
 ______________________________________________________________________
