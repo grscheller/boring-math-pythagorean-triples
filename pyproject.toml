@@ -33,7 +33,7 @@ keywords = [
 ]
 
 [project.optional-dependencies]
-tests = ["pytest >=8.3.2"]
+tests = ["pytest >=8.3.5"]
 
 [project.scripts]
 pythag3 = "bm.pythagorean_triples.cli.pythag3:pythag3_cli"
