@@ -4,32 +4,30 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "bm.pythagorean-triples"
-authors = [
-    { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
-]
+authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Framework :: Pytest",
-    "Intended Audience :: Developers",
     "Intended Audience :: Education",
-    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.13",
-    "Typing :: Typed"
+    "Typing :: Typed",
 ]
 dependencies = [
-    "bm.integer-math >= 0.5.1, < 0.6",
-    "dtools.circular-array >= 3.9.1, < 3.10",
-    "dtools.fp >= 1.4.1, < 1.5"
+    "bm.integer-math >= 0.5.3, < 0.6",
+    "dtools.circular-array >= 3.12.0, < 3.13",
+    "dtools.fp >= 1.6.0, < 1.7",
 ]
 dynamic = ["version", "description"]
 keywords = [
-    "pythagorean", "triples",
-    "math", "mathematics"
+    "pythagorean",
+    "triples",
+    "math",
+    "mathematics",
 ]
 
 [project.optional-dependencies]
@@ -44,16 +42,16 @@ Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHAN
 Documentation = "https://grscheller.github.io/boring-math-docs/pythagorean-triples"
 
 [tool.flit.sdist]
-exclude = ["dist", ".gitignore", ".mypy_cache"]
+exclude = ["dist", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
+
+[tool.pytest.ini_options]
+consider_namespace_packages = true
 
 [tool.pylsp-mypy]
 enabled = true
 live-mode = true
 strict = true
 report_progress = true
-
-[tool.black]
-line-length =100
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
@@ -63,19 +61,15 @@ warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-consider_namespace_packages = true
-
 [tool.ruff]
 target-version = "py313"
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
 
-[tool.ruff.format]
-quote-style = "single"
-
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
 
+[tool.ruff.format]
+quote-style = "single"
+docstring-code-line-length = 72
