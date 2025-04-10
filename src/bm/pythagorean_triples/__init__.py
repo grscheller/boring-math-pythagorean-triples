@@ -21,7 +21,7 @@
 
 """
 
-__version__ = '0.5.3'
+__version__ = '0.5.3.1'
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
