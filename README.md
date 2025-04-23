@@ -26,7 +26,7 @@ This project is part of the [Boring Math][4] **bm.** namespace project.
 #### Pythagorean Triple Class
 
 - Pythagorean Triple Class
-  - Method **Pythag3.triples**(a_start: int, a_max: int, max: Optional[int]) -> Iterator[int]
+  - Method `Pythag3.triples(a_start: int, a_max: int, max: Optional[int]) -> Iterator[int]`
     - Returns an iterator of tuples of primitive *Pythagorean* triples
   - A Pythagorean triple is a tuple in positive integers (a, b, c)
     - such that `a² + b² = c²`
