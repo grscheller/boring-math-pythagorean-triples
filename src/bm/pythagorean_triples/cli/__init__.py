@@ -21,6 +21,7 @@ section in the project's pyproject.toml file.
 
 #### Pythagorean CLI applications
 
-* Pythagorean triples: `bm.pythagorean_triples.cli.pythag3` --> pythag3
+- Pythagorean triples
+  - `bm.pythagorean_triples.cli.pythag3` --> pythag3
 
 """

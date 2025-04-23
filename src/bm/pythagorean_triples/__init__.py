@@ -15,13 +15,14 @@
 """
 ### Boring Math Library - Pythagorean triples
 
-#### Module for generating and analyzing Pythagorean triples.
+Module for generating and analyzing Pythagorean triples.
 
-* module bm.pythagorean_triples.pythag3: Pythagorean generation
+- module bm.pythagorean_triples.pythag3
+  - Pythagorean triple generation
 
 """
 
-__version__ = '0.5.3.1'
+__version__ = '0.5.4'
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
