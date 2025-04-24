@@ -42,7 +42,7 @@ pythag3 = "bm.pythagorean_triples.cli.pythag3:pythag3_cli"
 Homepage = "https://github.com/grscheller/bm-docs"
 Source = "https://github.com/grscheller/bm-pythagorean-triples"
 Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math-docs/pythagorean-triples"
+Documentation = "https://grscheller.github.io/bm-docs/pythagorean-triples"
 
 [tool.flit.sdist]
 exclude = ["dist", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
