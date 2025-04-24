@@ -39,6 +39,7 @@ tests = [
 pythag3 = "bm.pythagorean_triples.cli.pythag3:pythag3_cli"
 
 [project.urls]
+Homepage = "https://github.com/grscheller/bm-docs"
 Source = "https://github.com/grscheller/bm-pythagorean-triples"
 Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHANGELOG.md"
 Documentation = "https://grscheller.github.io/boring-math-docs/pythagorean-triples"
