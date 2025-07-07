@@ -13,7 +13,8 @@
 # limitations under the License.
 
 """
-### Module bm.pythagorean_triples.pythag3 - Pythagorean triples
+Pythagorean triples
+===================
 
 Pythagorean triples are three integers `a, b, c`  where `a² + b² = c²` Such
 a triple is primitive when `a, b, c > 0` and `gcd(a, b, c) = 1`. Geometrically,
