@@ -23,8 +23,8 @@ section in the project's pyproject.toml file.
 Pythagorean CLI applications
 ----------------------------
 
-- Pythagorean triples
+Pythagorean triples generation.
 
-  - `bm.pythagorean_triples.cli.pythag3` --> pythag3
+- `bm.pythagorean_triples.cli.pythag3` --> pythag3
 
 """

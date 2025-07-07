@@ -1,60 +1,47 @@
-[build-system]
-requires = ["flit_core>=3.4,<4"]
-build-backend = "flit_core.buildapi"
-
 [project]
 name = "bm.pythagorean-triples"
-authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
-license = { file = "LICENSE" }
+version = "0.6.0"
 readme = "README.md"
 requires-python = ">=3.12"
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Framework :: Pytest",
-    "Intended Audience :: Education",
-    "License :: OSI Approved :: Apache Software License",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.13",
-    "Typing :: Typed",
-]
-dynamic = ["version", "description"]
+license = { file = "LICENSE" }
+authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
-    "pythagorean",
-    "triples",
-    "math",
-    "mathematics",
+  "math",
+  "mathematics",
+  "pythagorean",
+  "triples",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Pytest",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
 ]
 dependencies = [
-    "bm.integer-math >= 0.6.0, < 0.7",
-    "dtools.circular-array >= 3.12.1, < 3.13",
-    "dtools.fp >= 1.7.0, < 1.8",
+  "bm.integer-math >= 0.6.0",
+  "pythonic-fp.circulararray >= 5.1.0",
+  "pythonic-fp.fptools >= 3.0.0",
 ]
+dynamic = ["description"]
 
-[project.optional-dependencies]
-tests = [
-    "pytest >=8.3.5",
-]
+[project.urls]
+Changelog = "https://grscheller.github.io/bm-pythagorean-triples/html/changelog.html"
+Documentation = "https://grscheller.github.io/bm-pythagorean-triples/html/"
+Homepage = "https://github.com/grscheller/bm-docs/blob/main/README.md"
+Source = "https://github.com/grscheller/bm-pythagorean-triples"
 
 [project.scripts]
 pythag3 = "bm.pythagorean_triples.cli.pythag3:pythag3_cli"
 
-[project.urls]
-Homepage = "https://github.com/grscheller/bm-docs"
-Source = "https://github.com/grscheller/bm-pythagorean-triples"
-Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/bm-docs/pythagorean-triples"
+[build-system]
+requires = ["flit_core>=3.4,<4"]
+build-backend = "flit_core.buildapi"
 
 [tool.flit.sdist]
-exclude = ["dist", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
-
-[tool.pytest.ini_options]
-consider_namespace_packages = true
-
-[tool.pylsp-mypy]
-enabled = true
-live-mode = true
-strict = true
-report_progress = true
+exclude = ["dist", "docs", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
@@ -63,6 +50,15 @@ local_partial_types = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
+
+[tool.pylsp-mypy]
+enabled = true
+live-mode = true
+strict = true
+report_progress = true
+
+[tool.pytest.ini_options]
+consider_namespace_packages = true
 
 [tool.ruff]
 target-version = "py313"

@@ -27,21 +27,22 @@ from bm.pythagorean_triples.pythag3 import Pythag3
 
 
 def pythag3_cli() -> None:
-    """
-    Prints tuples of primitive Pythagorean triples
+    """Prints tuples of primitive Pythagorean triples
 
-    * Pythagorean triples are three integers a, b, c where `a² + b² = c²`
-    * such a triple is primitive when `a,b,c > 0` and `gcd(a,b,c) = 1`
-    * geometrically `a, b, c` represent the sides of a right triangle
+    - Pythagorean triples are three integers ``a, b, c`` where ``a² + b² = c²``
+    - such a triple is primitive when ``a,b,c > 0`` and ``gcd(a,b,c) = 1``
+    - geometrically ``a, b, c`` represent the sides of a right triangle
 
-    Usage: `pythag3 [m [n [max]]]`
+    Usage: ``pythag3 [m [n [max]]]``
 
-    | # of args |     | Prints all possible triples `(a, b, c)` satisfying  |
-    |:---------:| --- |:--------------------------------------------------- |
-    |    `3`    |     | `m <= a <= n` and `a,b,c <= max`                    |
-    |    `2`    |     | `m <= a <= n`                                       |
-    |    `1`    |     | `a <= m`                                            |
-    |    `0`    |     | `3 <= a <= 100`                                     |
+    +-----------+-----------------------------------------------------+
+    | # of args | Prints all possible triples `(a, b, c)` satisfying  |
+    +===========+=====================================================+
+    |    `3`    | `m <= a <= n` and `a,b,c <= max`                    |
+    |    `2`    | `m <= a <= n`                                       |
+    |    `1`    | `a <= m`                                            |
+    |    `0`    | `3 <= a <= 100`                                     |
+    +-----------+-----------------------------------------------------+
 
     """
     pythag3 = Pythag3()

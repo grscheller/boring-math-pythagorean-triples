@@ -16,9 +16,9 @@
 Pythagorean triples
 ===================
 
-Pythagorean triples are three integers `a, b, c`  where `a² + b² = c²` Such
-a triple is primitive when `a, b, c > 0` and `gcd(a, b, c) = 1`. Geometrically,
-`a, b, c` represent the sides of a right triangle.
+Pythagorean triples are three integers ``a, b, c``  where ``a² + b² = c²``.
+Such a triple is primitive when ``a, b, c > 0`` and ``gcd(a, b, c) = 1``.
+Geometrically, ``a, b, c`` represent the sides of a right triangle.
 
 """
 
@@ -88,10 +88,12 @@ class Pythag3:
     ) -> Iterator[tuple[int, int, int]]:
         """Returns an iterator of all possible primitive Pythagorean triples.
 
-        - tuple `(a, b, c)`
-          - where `a_start <= a <= a_max`
-          - and `0 < a < b < c < abc_max`
-        - if `abc_max` not given, returns all theoretically possible triples
+        - tuple ``(a, b, c)``
+
+          - where ``a_start <= a <= a_max``
+          - and ``0 < a < b < c < abc_max``
+
+        - if ``abc_max`` not given, returns all theoretically possible triples
 
         """
         a_init = max(a_start, 3)

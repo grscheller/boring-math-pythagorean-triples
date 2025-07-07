@@ -13,16 +13,17 @@
 # limitations under the License.
 
 """
-### Boring Math Library - Pythagorean triples
+Pythagorean triples
+===================
 
 Module for generating and analyzing Pythagorean triples.
 
 - module bm.pythagorean_triples.pythag3
+
   - Pythagorean triple generation
 
 """
 
-__version__ = '0.5.4.0'
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
