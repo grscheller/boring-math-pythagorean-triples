@@ -22,8 +22,8 @@ classifiers = [
 ]
 dependencies = [
   "bm.integer-math >= 0.6.0",
-  "pythonic-fp.circulararray >= 5.1.0",
-  "pythonic-fp.fptools >= 3.0.0",
+  "pythonic-fp.circulararray >= 5.3.0",
+  "pythonic-fp.fptools >= 5.0.0",
 ]
 dynamic = ["description"]
 
