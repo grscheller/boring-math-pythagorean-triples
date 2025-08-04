@@ -1,6 +1,6 @@
 [project]
 name = "boring-math-pythagorean-triples"
-version = "0.8.0"
+version = "0.8.1"
 readme = "README.rst"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }
@@ -20,7 +20,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "bm.integer-math>=0.8.0",
+  "boring-math-integer-math>=0.8.0",
   "pythonic-fp.circulararray>=5.3.0",
   "pythonic-fp.fptools>=5.0.0",
 ]
