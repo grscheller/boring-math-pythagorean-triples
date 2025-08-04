@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core>=3.4,<4"]
+requires = ["flit_core>=3.12,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
@@ -36,16 +36,16 @@ test = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/grscheller/bm-pythagorean-triples/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/bm-docs/pythagorean-triples/"
-Homepage = "https://github.com/grscheller/bm-docs/blob/main/README.md"
-Source = "https://github.com/grscheller/bm-pythagorean-triples"
+Changelog = "https://github.com/grscheller/boring-math-pythagorean-triples/blob/main/CHANGELOG.md"
+Documentation = "https://grscheller.github.io/boring-math/pythagorean-triples/build/html/releases.html"
+Homepage = "https://github.com/grscheller/boring-math/blob/main/README.md"
+Source = "https://github.com/grscheller/boring-math-pythagorean-triples"
 
 [project.scripts]
 pythag3 = "bm.pythagorean_triples.cli.pythag3:pythag3_cli"
 
 [tool.flit.module]
-name = "boring_math.integer_math"
+name = "boring_math.pythagorean_triples"
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
