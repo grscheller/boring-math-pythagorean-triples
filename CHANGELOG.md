@@ -1,6 +1,6 @@
 # CHANGELOG
 
-PyPI bm.pythagorean-triples project.
+PyPI boring-math-pythagorean-triples project.
 
 ## Semantic Versioning
 
