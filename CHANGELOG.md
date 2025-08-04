@@ -14,6 +14,15 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
+### Version 0.8.0 - PyPI release date 2025-08-04
+
+- Minimal coding changes. Overall infrastructure now modeled
+  after pythonic-fp namespace projects.
+
+### Version 0.6.1 - PyPI release date 2025-07-14
+
+- Fixed munged CHANGELOG and Documentation links for PyPI
+
 ### Version 0.6.1 - PyPI release date 2025-07-14
 
 - Fixed munged CHANGELOG and Documentation links for PyPI
