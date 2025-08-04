@@ -23,7 +23,7 @@ Program **pythag3**  outputs lists of primitive triples
 from __future__ import annotations
 
 import sys
-from bm.pythagorean_triples.pythag3 import Pythag3
+from boring_math.pythagorean_triples.pythag3 import Pythag3
 
 
 def pythag3_cli() -> None:

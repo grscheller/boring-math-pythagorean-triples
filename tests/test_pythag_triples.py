@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from bm.pythagorean_triples.pythag3 import Pythag3
+from boring_math.pythagorean_triples.pythag3 import Pythag3
 
 class Test_pythag3:
     def test_triples(self) -> None:

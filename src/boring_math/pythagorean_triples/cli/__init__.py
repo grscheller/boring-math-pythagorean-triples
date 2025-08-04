@@ -13,17 +13,18 @@
 # limitations under the License.
 
 """
-Pythagorean triples
-===================
+Entry points for automatically generated CLI scripts
+====================================================
 
-Module for generating and analyzing Pythagorean triples.
+The CGI package automatically generates Python scripts in an OS independent way
+using the packaging build backend. This is configured by the `[project.scripts]`
+section in the project's pyproject.toml file.
 
-- module bm.pythagorean_triples.pythag3
+Pythagorean CLI applications
+----------------------------
 
-  - Pythagorean triple generation
+Pythagorean triples generation.
+
+- `boring_math.pythagorean_triples.cli.pythag3` --> pythag3
 
 """
-
-__author__ = 'Geoffrey R. Scheller'
-__copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
-__license__ = 'Apache License 2.0'
