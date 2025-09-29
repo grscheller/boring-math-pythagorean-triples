@@ -25,6 +25,6 @@ Pythagorean CLI applications
 
 Pythagorean triples generation.
 
-- `boring_math.pythagorean_triples.cli.pythag3` --> pythag3
+- `bm.pythagorean_triples.cli.pythag3` --> pythag3
 
 """

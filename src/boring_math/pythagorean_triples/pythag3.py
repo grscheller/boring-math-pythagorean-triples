@@ -22,8 +22,6 @@ Geometrically, ``a, b, c`` represent the sides of a right triangle.
 
 """
 
-from __future__ import annotations
-
 from collections.abc import Callable, Iterator
 from boring_math.integer_math.number_theory import gcd, iSqrt
 

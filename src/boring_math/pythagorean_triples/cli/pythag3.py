@@ -20,8 +20,6 @@ Program **pythag3**  outputs lists of primitive triples
 
 """
 
-from __future__ import annotations
-
 import sys
 from boring_math.pythagorean_triples.pythag3 import Pythag3
 
