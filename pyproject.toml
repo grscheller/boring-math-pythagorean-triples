@@ -33,7 +33,7 @@ Homepage = "https://grscheller.github.io/boring-math/homepage/build/html/"
 Source = "https://github.com/grscheller/boring-math-pythagorean-triples"
 
 [project.scripts]
-pythag3 = "boring_math.pythagorean_triples.cli.pythag3:pythag3_cli"
+pythag3 = "boring_math.pythagorean_triples.cli.pythag3_cli:pythag3"
 
 [project.optional-dependencies]
 test = [

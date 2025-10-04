@@ -24,7 +24,7 @@ import sys
 from boring_math.pythagorean_triples.pythag3 import Pythag3
 
 
-def pythag3_cli() -> None:
+def pythag3() -> None:
     """Prints tuples of primitive Pythagorean triples
 
     - Pythagorean triples are three integers ``a, b, c`` where ``a² + b² = c²``
@@ -49,7 +49,7 @@ def pythag3_cli() -> None:
 
     if len(args) > 2:
         pythagTriples = pythag3.triples(
-            a_start=int(args[0]), a_max=int(args[1]), max=int(args[2])
+            a_start=int(args[0]), a_max=int(args[1]), abc_max=int(args[2])
         )
     elif len(args) == 2:
         pythagTriples = pythag3.triples(a_start=int(args[0]), a_max=int(args[1]))

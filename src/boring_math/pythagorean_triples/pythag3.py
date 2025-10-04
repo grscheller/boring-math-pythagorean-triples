@@ -29,11 +29,7 @@ __all__ = ['Pythag3']
 
 
 class Pythag3:
-    """Pythagorean Triple Iterator Class.
-
-    Supports the generation of primitive Pythagorean triples.
-
-    """
+    """Pythagorean Triple Iteration."""
 
     def __init__(self, last_square: int = 500, /):
         last_h = last_square if last_square % 2 == 1 else last_square - 1
