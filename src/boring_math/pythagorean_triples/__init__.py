@@ -12,17 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Pythagorean triples
-===================
-
-Module for generating and analyzing Pythagorean triples.
-
-- module boring_math.pythagorean_triples.pythag3
-
-  - Pythagorean triple generation
-
-"""
+"""Module for generating and analyzing Pythagorean triples."""
 
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'

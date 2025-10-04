@@ -12,9 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Pythagorean triples
-===================
+"""Pythagorean triples
 
 Pythagorean triples are three integers ``a, b, c``  where ``a² + b² = c²``.
 Such a triple is primitive when ``a, b, c > 0`` and ``gcd(a, b, c) = 1``.

@@ -12,19 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Entry points for automatically generated CLI scripts
-====================================================
-
-The CGI package automatically generates Python scripts in an OS independent way
-using the packaging build backend. This is configured by the `[project.scripts]`
-section in the project's pyproject.toml file.
+"""Entry points for automatically generated CLI scripts.
 
 Pythagorean CLI applications
 ----------------------------
 
-Pythagorean triples generation.
+Pythagorean triples generation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `bm.pythagorean_triples.cli.pythag3` --> pythag3
+- ``bm.pythagorean_triples.cli.pythag3`` --> pythag3
 
 """
