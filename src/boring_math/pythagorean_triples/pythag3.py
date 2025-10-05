@@ -27,7 +27,7 @@ __all__ = ['Pythag3']
 
 
 class Pythag3:
-    """Pythagorean Triple Iteration."""
+    """Pythagorean triple iteration class."""
 
     def __init__(self, last_square: int = 500, /):
         last_h = last_square if last_square % 2 == 1 else last_square - 1
@@ -54,7 +54,7 @@ class Pythag3:
         ) -> tuple[int, Callable[[int], int], int]:
             a_cap = 2 if amax < 3 else amax
 
-            def b_final(a: int) -> int:  # Theoretical max
+            def b_final(a: int) -> int:  # theoretical maximum
                 return (a**2 - 1) // 2
 
             b_cap = b_final
@@ -80,12 +80,19 @@ class Pythag3:
     ) -> Iterator[tuple[int, int, int]]:
         """Returns an iterator of all possible primitive Pythagorean triples.
 
-        - tuple ``(a, b, c)``
+        .. note::
 
-          - where ``a_start <= a <= a_max``
-          - and ``0 < a < b < c < abc_max``
+            Returned Iterator iterates in tuples ``(a, b, c)`` in dictionary order.
 
-        - if ``abc_max`` not given, returns all theoretically possible triples
+            If ``abc_max`` not given, returns all theoretically possible
+            triples with ``a_start <= a <= a_max``.
+
+            Never returns an infinite iterator.
+
+        :param a_start: Starting value for the smallest side `a`.
+        :param a_max: Maximum value for the smallest side `a`.
+        :param abc_max: Maximum value for any side.
+        :returns: Iterator of Tuples ``(a, b, c)`` with ``a_start <= a <= a_max`` and ``3 <= a < b < c <= abc_max``
 
         """
         a_init = max(a_start, 3)
