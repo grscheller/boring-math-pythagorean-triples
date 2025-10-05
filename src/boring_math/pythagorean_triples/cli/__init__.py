@@ -15,11 +15,22 @@
 """Entry points for automatically generated CLI scripts.
 
 Pythagorean CLI applications
-----------------------------
+============================
+
+Command line applications to generate and analyze Pythagorean Triples.
 
 Pythagorean triples generation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
-- ``bm.pythagorean_triples.cli.pythag3`` --> pythag3
+Module pythag3_cli
+~~~~~~~~~~~~~~~~~~
+
++----------+--------------------------------------+---------------------------------------+
+| Function | CLI Program with Arguments           | Description                           |
++==========+======================================+=======================================+
+|          |                                      | print all triples (a, b, c) such that |
+| pythag3  | pythag3 [a_start, [a_max, [abc_max]] | ``start <= a <= a_max`` and           |
+|          |                                      | ``a, b, c <= abc_max``                |
++----------+--------------------------------------+---------------------------------------+
 
 """
