@@ -21,7 +21,7 @@ Geometrically, ``a, b, c`` represent the sides of a right triangle.
 """
 
 from collections.abc import Callable, Iterator
-from boring_math.integer_math.number_theory import gcd, iSqrt
+from boring_math.number_theory import gcd, iSqrt
 
 __all__ = ['Pythag3']
 
