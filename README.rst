@@ -17,7 +17,7 @@ Documentation
 
 Documentation for this project is hosted on
 `GitHub Pages
-<https://grscheller.github.io/boring-math/pythagorean-triples/development/build/html>`_.
+<https://grscheller.github.io/boring-math/pythagorean-triples>`_.
 
 Copyright and License
 ---------------------
