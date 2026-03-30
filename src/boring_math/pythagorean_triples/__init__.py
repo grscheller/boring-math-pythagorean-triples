@@ -13,7 +13,10 @@
 # limitations under the License.
 
 """
-..admonition:: Pythagorean Triples
+Pythagorean Triples
+-------------------
+
+..admonition:: Pythagorean Triples 
 
     Module for generating and analyzing Pythagorean triples.
 
