@@ -1,4 +1,4 @@
-# Copyright 2016-2025 Geoffrey R. Scheller
+# Copyright 2016-2026 Geoffrey R. Scheller
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,10 +18,10 @@ Pythagorean Triples
 
 ..admonition:: Pythagorean Triples 
 
-    Module for generating and analyzing Pythagorean triples.
+    Project for generating and analyzing Pythagorean triples.
 
 """
 
 __author__ = 'Geoffrey R. Scheller'
-__copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
+__copyright__ = 'Copyright (c) 2016-2026 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'

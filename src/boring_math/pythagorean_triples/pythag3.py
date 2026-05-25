@@ -1,4 +1,4 @@
-# Copyright 2016-2025 Geoffrey R. Scheller
+# Copyright 2016-2026 Geoffrey R. Scheller
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Pythagorean triples
+"""
+.. admonition:: Pythagorean triples
 
-Pythagorean triples are three integers ``a, b, c``  where ``a² + b² = c²``.
-Such a triple is primitive when ``a, b, c > 0`` and ``gcd(a, b, c) = 1``.
-Geometrically, ``a, b, c`` represent the sides of a right triangle.
+    Pythagorean triples are three integers ``a, b, c``  where ``a² + b² = c²``.
+    Such a triple is primitive when ``a, b, c > 0`` and ``gcd(a, b, c) = 1``.
+    Geometrically, ``a, b, c`` represent the sides of a right triangle.
 
 """
 
@@ -27,7 +28,12 @@ __all__ = ['Pythag3']
 
 
 class Pythag3:
-    """Pythagorean triple iteration class."""
+    """
+    .. admonition:: Pythagorean triple generation
+
+        Class to generate tuples of Pythagorean triples.
+
+    """
 
     def __init__(self, last_square: int = 500, /):
         last_h = last_square if last_square % 2 == 1 else last_square - 1
@@ -37,8 +43,8 @@ class Pythag3:
         self.squares = {h * h: h for h in range(5, last_h + 1, 2)}
         self.last_h = last_h
 
-    def extend_squares(self, last_to_square: int, /) -> None:
-        """Extend the self.squares perfect square lookup table."""
+    def _extend_squares(self, last_to_square: int, /) -> None:
+        # Extend perfect square lookup table
         last_h = last_to_square if last_to_square % 2 == 1 else last_to_square - 1
         if last_h > self.last_h:
             for h in range(self.last_h + 2, last_h + 1, 2):
@@ -78,26 +84,28 @@ class Pythag3:
     def triples(
         self, a_start: int = 3, a_max: int = 3, abc_max: int | None = None
     ) -> Iterator[tuple[int, int, int]]:
-        """Returns an iterator of all possible primitive Pythagorean triples.
+        """
+        .. admonition:: Generate Pythagorean triples
 
-        .. note::
+            :param a_start: Starting value for the smallest side `a`.
+            :param a_max: Maximum value for the smallest side `a`.
+            :param abc_max: Maximum value for any side.
+            :yields: Tuples ``(a, b, c)`` with ``a_start <= a <= a_max``
+                     and ``3 <= a < b < c <= abc_max``.
 
-            Returned Iterator iterates in tuples ``(a, b, c)`` in dictionary order.
+            .. note::
 
-            If ``abc_max`` not given, returns all theoretically possible
-            triples with ``a_start <= a <= a_max``.
+                Returned Iterator iterates the triples in dictionary order.
 
-            Never returns an infinite iterator.
+                If ``abc_max`` not given, returns all theoretically possible
+                triples with ``a_start <= a <= a_max``.
 
-        :param a_start: Starting value for the smallest side `a`.
-        :param a_max: Maximum value for the smallest side `a`.
-        :param abc_max: Maximum value for any side.
-        :returns: Iterator of Tuples ``(a, b, c)`` with ``a_start <= a <= a_max`` and ``3 <= a < b < c <= abc_max``
+                Never returns an infinite iterator.
 
         """
         a_init = max(a_start, 3)
         a_cap, b_cap, c_cap = Pythag3._cap_sides(a_max, abc_max)
-        self.extend_squares(c_cap)
+        self._extend_squares(c_cap)
 
         # Calculate Pythagorean triples
         for side_a in range(a_init, a_cap + 1):

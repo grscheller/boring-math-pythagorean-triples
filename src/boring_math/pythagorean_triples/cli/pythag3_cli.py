@@ -12,32 +12,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Program **pythag3**  outputs lists of primitive triples."""
+"""
+.. admonition::Program pythag3
+
+    Program to print tuples of primitive Pythagorean triples.
+
+"""
 
 import sys
 from boring_math.pythagorean_triples.pythag3 import Pythag3
 
 
 def pythag3() -> None:
-    """Prints tuples of primitive Pythagorean triples.
+    """
+    .. admonition:: Entry point for automatically generated CGI script.
 
-    - Pythagorean triples are three integers ``a, b, c`` where ``a² + b² = c²``
-    - such a triple is primitive when ``a,b,c > 0`` and ``gcd(a,b,c) = 1``
-    - geometrically ``a, b, c`` represent the sides of a right triangle
+        - Pythagorean triples are three integers ``a, b, c`` where ``a² + b² = c²``
+        - such a triple is primitive when ``a,b,c > 0`` and ``gcd(a,b,c) = 1``
+        - geometrically ``a, b, c`` represent the sides of a right triangle
 
-    Usage: ``pythag3 [m [n [max_side_length]]]``
+        .. admonition:: Usage
 
-    +-----------+---------------------------------------------------+
-    | # of args | Prints all possible triples (a, b, c) satisfying  |
-    +===========+===================================================+
-    |     0     |  3 <= a <= 100                                    |
-    +-----------+---------------------------------------------------+
-    |     1     |  3 <= a <= m                                      |
-    +-----------+---------------------------------------------------+
-    |     2     |  m <= a <= n                                      |
-    +-----------+---------------------------------------------------+
-    |     3     |  m <= a <= n and a,b,c <= max_side_length         |
-    +-----------+---------------------------------------------------+
+            Usage: ``pythag3 [m [n [max_side_length]]]``
+
+            +-----------+---------------------------------------------------+
+            | # of args | Prints all possible triples (a, b, c) satisfying  |
+            +===========+===================================================+
+            |     0     |  3 <= a <= 100                                    |
+            +-----------+---------------------------------------------------+
+            |     1     |  3 <= a <= m                                      |
+            +-----------+---------------------------------------------------+
+            |     2     |  m <= a <= n                                      |
+            +-----------+---------------------------------------------------+
+            |     3     |  m <= a <= n and a,b,c <= max_side_length         |
+            +-----------+---------------------------------------------------+
 
     """
     pythag3 = Pythag3()

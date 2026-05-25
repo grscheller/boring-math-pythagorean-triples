@@ -12,18 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Entry points for automatically generated CLI scripts.
-
+"""
 Pythagorean CLI applications
 ============================
 
-Command line applications to generate and analyze Pythagorean Triples.
+Entry points for automatically generated command line scripts.
+These CLI applications list and analyze Pythagorean Triples.
 
 Pythagorean triples generation
 ------------------------------
-
-Module pythag3_cli
-~~~~~~~~~~~~~~~~~~
 
 +----------+--------------------------------------+---------------------------------------+
 | Function | CLI Program with Arguments           | Description                           |
