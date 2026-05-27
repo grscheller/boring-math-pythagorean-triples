@@ -1,9 +1,12 @@
+[build-system]
+requires = ["flit_core>=3.12,<4"]
+build-backend = "flit_core.buildapi"
+
 [project]
 name = "boring-math-pythagorean-triples"
 version = "0.8.4"
 readme = "README.rst"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
   "mathematics",
@@ -28,7 +31,7 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-pythagorean-triples/blob/main/CHANGELOG.rst"
-Documentation = "https://grscheller.github.io/boring-math/pythagorean-triples/development/build/html/"
+Documentation = "https://grscheller.github.io/boring-math/homepage/build/html/projects/pythagorean_triples.html"
 Homepage = "https://grscheller.github.io/boring-math/homepage/build/html/"
 Source = "https://github.com/grscheller/boring-math-pythagorean-triples"
 
@@ -39,10 +42,6 @@ pythag3 = "boring_math.pythagorean_triples.cli.pythag3_cli:pythag3"
 test = [
   "pytest>=8.4.1",
 ]
-
-[build-system]
-requires = ["flit_core>=3.12,<4"]
-build-backend = "flit_core.buildapi"
 
 [tool.flit.module]
 name = "boring_math.pythagorean_triples"
