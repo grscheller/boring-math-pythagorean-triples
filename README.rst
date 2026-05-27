@@ -5,8 +5,7 @@ PyPI project
 `boring-math-pythagorean-triples
 <https://pypi.org/project/boring-math-pythagorean-triples>`_.
 
-Package containing a class to generate Pythagorean triples along
-with a CLI executable.
+Generating Pythagorean triples along with example CLI executable.
 
 This pypi project is part of the
 `boring math
