@@ -23,9 +23,9 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "boring-math-number-theory>=2.0.0",
-  "pythonic-fp.circulararray>=5.3.2",
-  "pythonic-fp.fptools>=5.1.1",
+  "pythonic-fp.circulararray>=6.1.1",
+  "pythonic-fp.fptools>=5.4.0",
+  "boring-math-number-theory>=2.0.3",
 ]
 dynamic = ["description"]
 
